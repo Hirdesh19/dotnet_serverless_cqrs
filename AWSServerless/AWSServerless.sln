@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSServerless.API", "AWSServerless.API\AWSServerless.API.csproj", "{7E79E56C-D607-43FA-8F7E-F420016433CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSServerless.Domain", "AWSServerless.Domain\AWSServerless.Domain.csproj", "{687B1192-7C4E-4C3D-A96E-3C3B9149E9E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E79E56C-D607-43FA-8F7E-F420016433CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E79E56C-D607-43FA-8F7E-F420016433CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E79E56C-D607-43FA-8F7E-F420016433CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E79E56C-D607-43FA-8F7E-F420016433CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{687B1192-7C4E-4C3D-A96E-3C3B9149E9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687B1192-7C4E-4C3D-A96E-3C3B9149E9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687B1192-7C4E-4C3D-A96E-3C3B9149E9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687B1192-7C4E-4C3D-A96E-3C3B9149E9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7606054-F42C-468D-9673-E51F6C92CF1E}
+	EndGlobalSection
+EndGlobal
