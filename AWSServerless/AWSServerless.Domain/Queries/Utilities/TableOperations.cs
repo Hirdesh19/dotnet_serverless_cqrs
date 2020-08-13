@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace AWSServerless.Domain.Queries.Utilities
 {
@@ -63,5 +60,4 @@ namespace AWSServerless.Domain.Queries.Utilities
 
         #endregion Public Methods
     }
-
 }

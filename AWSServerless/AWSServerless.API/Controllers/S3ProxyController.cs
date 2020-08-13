@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+using Amazon.S3;
+using Amazon.S3.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-
-using Amazon.S3;
-using Amazon.S3.Model;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace AWSServerless.API.Controllers
 {
@@ -18,10 +15,10 @@ namespace AWSServerless.API.Controllers
     [Route("api/[controller]")]
     public class S3ProxyController : ControllerBase
     {
-        IAmazonS3 S3Client { get; set; }
-        ILogger Logger { get; set; }
+        private IAmazonS3 S3Client { get; set; }
+        private ILogger Logger { get; set; }
 
-        string BucketName { get; set; }
+        private string BucketName { get; set; }
 
         public S3ProxyController(IConfiguration configuration, ILogger<S3ProxyController> logger, IAmazonS3 s3Client)
         {
@@ -29,7 +26,7 @@ namespace AWSServerless.API.Controllers
             this.S3Client = s3Client;
 
             this.BucketName = configuration[Startup.AppS3BucketKey];
-            if(string.IsNullOrEmpty(this.BucketName))
+            if (string.IsNullOrEmpty(this.BucketName))
             {
                 logger.LogCritical("Missing configuration for S3 bucket. The AppS3Bucket configuration must be set to a S3 bucket.");
                 throw new Exception("Missing configuration for S3 bucket. The AppS3Bucket configuration must be set to a S3 bucket.");
@@ -51,7 +48,7 @@ namespace AWSServerless.API.Controllers
                 this.Response.ContentType = "text/json";
                 return new JsonResult(listResponse.S3Objects);
             }
-            catch(AmazonS3Exception e)
+            catch (AmazonS3Exception e)
             {
                 this.Response.StatusCode = (int)e.StatusCode;
                 return new JsonResult(e.Message);
@@ -113,8 +110,8 @@ namespace AWSServerless.API.Controllers
         {
             var deleteRequest = new DeleteObjectRequest
             {
-                 BucketName = this.BucketName,
-                 Key = key
+                BucketName = this.BucketName,
+                Key = key
             };
 
             try

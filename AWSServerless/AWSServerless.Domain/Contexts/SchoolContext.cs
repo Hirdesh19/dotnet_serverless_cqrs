@@ -2,9 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AWSServerless.Domain.Contexts
@@ -48,7 +45,6 @@ namespace AWSServerless.Domain.Contexts
         ) : base(options)
         {
             _connectionStringName = connectionStringName;
-
         }
 
         public DbSet<Classroom> Classrooms { get; set; }

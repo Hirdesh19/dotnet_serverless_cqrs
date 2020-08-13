@@ -1,8 +1,6 @@
 ﻿using AWSServerless.Domain.Contexts;
 using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,15 +8,12 @@ namespace AWSServerless.Domain.Commands.DeleteStudent
 {
     public class DeleteStudentHandler : IRequestHandler<DeleteStudentCommand, bool>
     {
-
         private readonly ISchoolContext _context;
 
         public DeleteStudentHandler(ISchoolContext context)
         {
             this._context = context;
         }
-
-
 
         public async Task<bool> Handle(DeleteStudentCommand request, CancellationToken cancellationToken)
         {

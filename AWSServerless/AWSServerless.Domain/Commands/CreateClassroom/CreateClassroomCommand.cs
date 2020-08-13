@@ -1,12 +1,10 @@
 ﻿using AWSServerless.Domain.DTOs;
 using MediatR;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AWSServerless.Domain.Commands.CreateClassroom
 {
-    public class CreateClassroomCommand: IRequest<ClassroomDto>
+    public class CreateClassroomCommand : IRequest<ClassroomDto>
     {
         public int Id { get; set; }
 

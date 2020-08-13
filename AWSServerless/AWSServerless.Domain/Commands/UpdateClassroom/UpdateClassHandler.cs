@@ -5,13 +5,12 @@ using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace AWSServerless.Domain.Commands.UpdateClassroom
 {
-    public class UpdateClassHandler: IRequestHandler<UpdateClassroomCommand, bool>
+    public class UpdateClassHandler : IRequestHandler<UpdateClassroomCommand, bool>
     {
         private readonly ISchoolContext _context;
         private readonly IMapper _mapper;
@@ -40,7 +39,6 @@ namespace AWSServerless.Domain.Commands.UpdateClassroom
 
                 foreach (int studentId in request.StudentIds)
                 {
-
                     classroom.StudentClassrooms.Add(new StudentClassroom
                     {
                         StudentId = studentId

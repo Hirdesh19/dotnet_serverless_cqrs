@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AWSServerless.Domain.DTOs
+﻿namespace AWSServerless.Domain.DTOs
 {
     public class StudentClassroomDto
     {
-        public int StudentId { get; set; }
-
-        public StudentDto Student { get; set; }
-
-        public int ClassRoomId { get; set; }
+        #region Public Properties
 
         public ClassroomDto Classroom { get; set; }
+        public int ClassRoomId { get; set; }
+        public StudentDto Student { get; set; }
+        public int StudentId { get; set; }
+
+        #endregion Public Properties
     }
 }

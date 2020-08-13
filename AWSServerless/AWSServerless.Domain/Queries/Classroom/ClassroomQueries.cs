@@ -8,12 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AWSServerless.Domain.Queries.Classroom
 {
-    public class ClassroomQueries: IClassroomQueries
+    public class ClassroomQueries : IClassroomQueries
     {
         private readonly ISchoolContext _context;
         private readonly IMapper _mapper;
@@ -48,7 +47,6 @@ namespace AWSServerless.Domain.Queries.Classroom
             params Expression<Func<Entities.Classroom, object>>[] includes
         )
         {
-
             IQueryable<Entities.Classroom> query = _context.Classrooms.Where(where);
 
             int count = await query.CountAsync();
@@ -73,6 +71,5 @@ namespace AWSServerless.Domain.Queries.Classroom
 
             return result;
         }
-
     }
 }

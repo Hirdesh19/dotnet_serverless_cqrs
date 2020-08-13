@@ -6,7 +6,6 @@ using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -14,7 +13,6 @@ namespace AWSServerless.Domain.Commands.CreateStudent
 {
     public class CreateStudentHandler : IRequestHandler<CreateStudentCommand, StudentDto>
     {
-
         private readonly ISchoolContext _context;
         private readonly IMapper _mapper;
 
@@ -37,8 +35,8 @@ namespace AWSServerless.Domain.Commands.CreateStudent
             {
                 student.StudentClassrooms = new List<StudentClassroom>();
 
-                foreach (int classroomId in request.ClassroomIds) {
-
+                foreach (int classroomId in request.ClassroomIds)
+                {
                     student.StudentClassrooms.Add(new StudentClassroom
                     {
                         ClassRoomId = classroomId
@@ -56,7 +54,6 @@ namespace AWSServerless.Domain.Commands.CreateStudent
             }
 
             return _mapper.Map<Student, StudentDto>(student);
-
         }
     }
 }

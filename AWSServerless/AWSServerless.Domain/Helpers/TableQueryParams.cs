@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AWSServerless.Domain.Helpers
+﻿namespace AWSServerless.Domain.Helpers
 {
     /// <summary>
     /// Contains paging query parameters
@@ -31,18 +27,22 @@ namespace AWSServerless.Domain.Helpers
                 _filter = value;
             }
         }
+
         /// <summary>
         /// The amount of data to retrieve.
         /// </summary>
         public int Limit { get; set; } = 1000;
+
         /// <summary>
         /// The amount of data to skip.
         /// </summary>
         public int Skip { get; set; } = 0;
+
         /// <summary>
         /// The Sort Direction given a sort Property.
         /// </summary>
         public string SortDir { get; set; } = "-";
+
         /// <summary>
         /// The Sort Property to sort against.
         /// </summary>
@@ -50,5 +50,4 @@ namespace AWSServerless.Domain.Helpers
 
         #endregion Public Properties
     }
-
 }

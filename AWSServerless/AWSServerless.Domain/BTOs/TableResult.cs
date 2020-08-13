@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace AWSServerless.Domain.BTOs
 {
@@ -12,6 +10,7 @@ namespace AWSServerless.Domain.BTOs
         /// The Count of elements in the Table Result.
         /// </summary>
         public int Count { get; set; } = 0;
+
         /// <summary>
         /// The Values of elements in the Table Result.
         /// </summary>
@@ -19,5 +18,4 @@ namespace AWSServerless.Domain.BTOs
 
         #endregion Public Properties
     }
-
 }

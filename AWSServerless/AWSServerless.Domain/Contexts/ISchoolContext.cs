@@ -1,15 +1,11 @@
 ﻿using AWSServerless.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AWSServerless.Domain.Contexts
 {
     public interface ISchoolContext
     {
-
         #region DbSets
 
         DbSet<Classroom> Classrooms { get; set; }
@@ -37,7 +33,5 @@ namespace AWSServerless.Domain.Contexts
         Task<int> Commit();
 
         #endregion Public Methods
-
-
     }
 }

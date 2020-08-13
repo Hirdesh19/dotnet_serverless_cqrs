@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AWSServerless.API.ResponseModels;
-using AWSServerless.Domain.BTOs;
+﻿using AWSServerless.Domain.BTOs;
 using AWSServerless.Domain.Commands.CreateClassroom;
 using AWSServerless.Domain.Commands.DeleteClassroom;
 using AWSServerless.Domain.Commands.UpdateClassroom;
@@ -12,6 +7,7 @@ using AWSServerless.Domain.Helpers;
 using AWSServerless.Domain.Queries.Classroom;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,7 +23,8 @@ namespace AWSServerless.API.Controllers
         public ClassroomsController(
             IClassroomQueries classroomQueries,
             IMediator mediator
-        ) {
+        )
+        {
             _classroomQueries = classroomQueries;
             _mediator = mediator;
         }
@@ -83,7 +80,6 @@ namespace AWSServerless.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] UpdateClassroomCommand command)
         {
-
             if (command == null)
             {
                 return GenerateResponse(StatusType.Fail,

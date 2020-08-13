@@ -1,12 +1,9 @@
-﻿using AWSServerless.Domain.DTOs;
-using MediatR;
-using System;
+﻿using MediatR;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AWSServerless.Domain.Commands.UpdateClassroom
 {
-    public class UpdateClassroomCommand: IRequest<bool>
+    public class UpdateClassroomCommand : IRequest<bool>
     {
         public int Id { get; set; }
 

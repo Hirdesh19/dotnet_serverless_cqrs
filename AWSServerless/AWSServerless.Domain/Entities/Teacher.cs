@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AWSServerless.Domain.Entities
+﻿namespace AWSServerless.Domain.Entities
 {
     public class Teacher
     {

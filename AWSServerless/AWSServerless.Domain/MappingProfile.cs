@@ -4,7 +4,7 @@ using AWSServerless.Domain.Entities;
 
 namespace AWSServerless.Domain
 {
-    public class MappingProfile: Profile
+    public class MappingProfile : Profile
     {
         public MappingProfile()
         {

@@ -4,9 +4,6 @@ using AWSServerless.Domain.DTOs;
 using AWSServerless.Domain.Entities;
 using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -14,7 +11,6 @@ namespace AWSServerless.Domain.Commands.CreateTeacher
 {
     public class CreateTeacherHandler : IRequestHandler<CreateTeacherCommand, TeacherDto>
     {
-
         private readonly ISchoolContext _context;
         private readonly IMapper _mapper;
 
@@ -43,7 +39,6 @@ namespace AWSServerless.Domain.Commands.CreateTeacher
             }
 
             return _mapper.Map<Teacher, TeacherDto>(teacher);
-
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AWSServerless.Domain.DTOs
+﻿namespace AWSServerless.Domain.DTOs
 {
     public class TeacherDto
     {

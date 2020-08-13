@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using static AWSServerless.API.Controllers.BaseController;
+﻿using static AWSServerless.API.Controllers.BaseController;
 
 namespace AWSServerless.API.ResponseModels
 {
@@ -16,6 +12,5 @@ namespace AWSServerless.API.ResponseModels
         public object Value { get; set; }
 
         #endregion Public Properties
-
     }
 }

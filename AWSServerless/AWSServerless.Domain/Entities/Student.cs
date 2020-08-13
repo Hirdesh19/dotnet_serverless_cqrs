@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace AWSServerless.Domain.Entities
 {
     public class Student
     {
-
         public IList<StudentClassroom> StudentClassrooms { get; set; }
 
         public int Id { get; set; }

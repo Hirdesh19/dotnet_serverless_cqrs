@@ -1,8 +1,6 @@
 ﻿using AWSServerless.Domain.BTOs;
 using System;
-using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AWSServerless.Domain.Queries
@@ -47,5 +45,4 @@ namespace AWSServerless.Domain.Queries
 
         #endregion Public Methods
     }
-
 }

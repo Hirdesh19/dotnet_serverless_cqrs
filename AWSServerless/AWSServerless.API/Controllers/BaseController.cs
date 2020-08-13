@@ -1,15 +1,10 @@
 ﻿using AWSServerless.API.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AWSServerless.API.Controllers
 {
     public abstract class BaseController : Controller
     {
-
         // TODO:  This really should be in domain but doing this quick
         public enum StatusType
         {
@@ -17,16 +12,17 @@ namespace AWSServerless.API.Controllers
             /// Complete failure of request.
             /// </summary>
             Fail = 0,
+
             /// <summary>
             /// Request was sent but saving to the database or other logic was not successful.
             /// </summary>
             PartialSuccess = 1,
+
             /// <summary>
             /// Success
             /// </summary>
             Success = 2
         }
-
 
         #region Public Methods
 
@@ -59,5 +55,4 @@ namespace AWSServerless.API.Controllers
 
         #endregion Public Methods
     }
-
 }
