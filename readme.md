@@ -15,9 +15,6 @@
 # When (or not) to use Serverless
 
 Pros
-
-Cons
-
 * __Heavy Processing__
   * If you are running some genome calculations\, don’t use serverless\!
     * Although\, triggering through serverless is fine\!  Imagine spinning up those hunk vertical scaled machines only when needed via some trigger that YOU control\.
@@ -26,6 +23,10 @@ Cons
 
 * __Typically easy deployment__
   * In any cloud offering\, serverless is getting easy to deploy
+  
+Cons
+
+
 * __Cost__
   * Typically much cheaper than dedicated hardware running when not needed
 * __Cool Factor__
@@ -35,24 +36,24 @@ Cons
 
 Pros
 
-Cons
-
-* Too simple
-  * This is for complicated systems\.
-    * If your problem set is simple\, do the easiest solution\!
-* Simple CRUD is sufficient
-  * Again\, don’t over\-complicate things just because you can
-
-* Collaborative domains
+* __Collaborative domains__
   * users access data in parallel
-* Task\-based user interfaces
+* __Task\-based user interfaces__
   * users are guided through complex processes
   * Think some complicated wizard
-* Performance needs
+* __Performance needs__
   * Read times need to differ from writes
-* Team separation
+* __Team separation__
   * Separate responsibilities from reading and writing
-* Easier Evolution and Integration
+* __Easier Evolution and Integration__
+
+Cons
+
+* __Too simple__
+  * This is for complicated systems\.
+    * If your problem set is simple\, do the easiest solution\!
+* __Simple CRUD is sufficient__
+  * Again\, don’t over\-complicate things just because you can
 
 # Some Prerequisites
 
