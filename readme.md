@@ -15,7 +15,13 @@
 # When (or not) to use Serverless
 
 Pros
-
+* __Typically easy deployment__
+  * In any cloud offering\, serverless is getting easy to deploy
+* __Cost__
+  * Typically much cheaper than dedicated hardware running when not needed
+* __Cool Factor__
+  * It is just cool to say\!
+ 
 Cons
 
 * __Heavy Processing__
@@ -24,35 +30,29 @@ Cons
 * __Long Runtimes__
   * There are limits to serverless\, similar problem above
 
-* __Typically easy deployment__
-  * In any cloud offering\, serverless is getting easy to deploy
-* __Cost__
-  * Typically much cheaper than dedicated hardware running when not needed
-* __Cool Factor__
-  * It is just cool to say\!
 
 # When (or not) to use CQRS
 
 Pros
 
-Cons
-
-* Too simple
-  * This is for complicated systems\.
-    * If your problem set is simple\, do the easiest solution\!
-* Simple CRUD is sufficient
-  * Again\, don’t over\-complicate things just because you can
-
-* Collaborative domains
+* __Collaborative domains__
   * users access data in parallel
-* Task\-based user interfaces
+* __Task\-based user interfaces__
   * users are guided through complex processes
   * Think some complicated wizard
-* Performance needs
+* __Performance needs__
   * Read times need to differ from writes
-* Team separation
+* __Team separation__
   * Separate responsibilities from reading and writing
-* Easier Evolution and Integration
+* __Easier Evolution and Integration__
+
+Cons
+
+* __Too simple__
+  * This is for complicated systems\.
+    * If your problem set is simple\, do the easiest solution\!
+* __Simple CRUD is sufficient__
+  * Again\, don’t over\-complicate things just because you can
 
 # Some Prerequisites
 
