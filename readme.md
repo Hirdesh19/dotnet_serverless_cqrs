@@ -15,22 +15,21 @@
 # When (or not) to use Serverless
 
 Pros
+* __Typically easy deployment__
+  * In any cloud offering\, serverless is getting easy to deploy
+* __Cost__
+  * Typically much cheaper than dedicated hardware running when not needed
+* __Cool Factor__
+  * It is just cool to say\!
+ 
+Cons
+
 * __Heavy Processing__
   * If you are running some genome calculations\, don’t use serverless\!
     * Although\, triggering through serverless is fine\!  Imagine spinning up those hunk vertical scaled machines only when needed via some trigger that YOU control\.
 * __Long Runtimes__
   * There are limits to serverless\, similar problem above
 
-* __Typically easy deployment__
-  * In any cloud offering\, serverless is getting easy to deploy
-  
-Cons
-
-
-* __Cost__
-  * Typically much cheaper than dedicated hardware running when not needed
-* __Cool Factor__
-  * It is just cool to say\!
 
 # When (or not) to use CQRS
 
